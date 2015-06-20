@@ -1,0 +1,21 @@
+{
+    "name": "application-name"
+  , "version": "0.0.1"
+  , "private": true
+  , "scripts": {
+      "start": "node ./bin/server.js &"
+    }
+  , "dependencies": {
+      "express": "*"
+    , "express-cluster": "*"
+    , "errorhandler": "*"
+    , "method-override": "*"
+    , "morgan": "*"
+    , "serve-favicon": "*"
+    , "jade": "*"
+    , "body-parser": "*"
+    , "multer": "*"
+    , "cookie-parser": "*"
+    , "log4js": "*"
+  }
+}
