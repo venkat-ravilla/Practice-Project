@@ -1,5 +1,5 @@
 {
-    "name": "Practice Project"
+    "name": "Practice-Project"
   , "version": "0.0.1"
   , "private": true
   , "scripts": {
@@ -17,5 +17,10 @@
     , "multer": "*"
     , "cookie-parser": "*"
     , "log4js": "*"
+    , "angular": "*"
+    , "angular-route": "*"
+    , "angular-resource": "*"
+    , "jquery": "*"
+    , "angular-animate": "*"
   }
 }

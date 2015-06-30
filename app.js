@@ -14,7 +14,7 @@ var express = require('express')
   ,log4js = require("log4js");
 
 var logger = log4js.getLogger('app');
-
+var loginPageRouter = require('./routes/login');
 var homePageRouter = require('./routes/index');
 var userRouter = require('./routes/users');
 
@@ -40,6 +40,7 @@ var app = module.exports = express();
 * Routes Configuration
 */
 app.use('/',homePageRouter);
+app.use('/login',loginPageRouter);
 app.use('/users',userRouter);
 
 var env = process.env.NODE_ENV || "development";

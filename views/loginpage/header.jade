@@ -1,0 +1,16 @@
+div(id="header_container", class="header-container")
+  div(id="left_header_container", class="left-header-container")
+    div(id="company_logo", class="company-logo")
+      img(src="../images/logo.png", id="logo_img_id")
+    div(id="menu_container", class="menu-container")
+      div(id="menu_image", class="menu-image")
+  div(id="middle_header_container", class="middle-header-container")
+    div(id="search_box_container", class="search-box-container")
+      input(id="search_box_input", class="search-box-input", placeholder="Search here")
+      div(id="search_box_image", class="search-box-image")
+    div(id="nav_container", class="nav-container")
+  div(id="right_header_container", class="right-header-container")
+    div(id="signup_button_container", ng-click="signUpDialog()", class="signup-button-container")
+      button(id="signup_button_id", class="btn btn-danger") Sign Up
+    div(id="signin_button_container", ng-click="signInDialog()", class="signin-button-container")
+      button(id="signin_button_id", class="btn btn-default") Sign In

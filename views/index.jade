@@ -1,2 +1,8 @@
-h1= title
-p Welcome to #{title}
+extends ./layout.jade
+block bodycontent
+ h1= title
+ p Welcome to #{title}
+ ul
+   li(class="ng-scope", ng-repeat= "phone in phones")
+     span {{phone.name}}
+

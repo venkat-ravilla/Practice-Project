@@ -1,0 +1,19 @@
+TODAY=`date +%Y.%m.%d`
+
+#STDLOG=logs/app${TODAY}.log
+
+#STDLOG= /home/venkat/pracproj/newpracticeproj/myappclone/Practice-Project/log/app.log
+
+#ERRLOG=logs/errors${TODAY}.log
+
+#ERRLOG= /home/venkat/pracproj/newpracticeproj/myappclone/Practice-Project/log/errors.log
+
+TIME=`date +%Y-%m-%d\ %H:%M:%S`
+
+#echo "["$TIME"]" "Beginning of Node Server Startup" >> ${STDLOG}
+
+node ./bin/server.js &
+
+#echo "Ending of Node Server Startup" >> ${STDLOG}
+
+echo "Node Server starting..check the logs - ../$STDLOG  and ../$ERRLOG and ../logs/logfile.log"

@@ -1,0 +1,10 @@
+doctype html
+html(ng-app='phonecatApp')
+	head
+		title= title
+		link(rel='stylesheet', href='/css/style.css')
+		script(type='text/javascript', src='/js/angular/angular.min.js')
+		script(type='text/javascript', src='/controllers/controller.js')
+		script(type='text/javascript', src='/js/jquery/jquery.min.js')
+	body(ng-controller='PhoneListCtrl')
+		block bodycontent

@@ -1,0 +1,31 @@
+div(id="side_menu_container", class="side-menu-container")
+div(id="middle_container", class="middle-container")
+	div(id="signup_container",class="signup-container hide")
+		div(id="signup_label", class="signup-label") Sign Up
+		div(id="signup_firstname_container", class="inputbox-container login-input-container signup-firstname-container")
+			input(id="signup_firstname_field", ng-model="user.firstname", class="inputbox login-input-field signup-firstname-field", type="text", placeholder="First Name")
+		div(id="signup_lastname_container", class="inputbox-container login-input-container signup-lastname-container")
+			input(id="signup_lastname_field", ng-model="user.lastname", class="inputbox login-input-field signup-lastname-field", type="text", placeholder="Last Name")
+		div(id="signup_phone_container", class="inputbox-container login-input-container signup-phone-container")
+			input(id="signup_phone_field", ng-model="user.phoneno", class="inputbox login-input-field signup-phone-field", type="phone", placeholder="Phone No")
+		div(id="signup_gender_container", class="inputbox-container login-input-container signup-gender-container")
+			select(id="signup_gender_field", ng-model="user.gender", ng-options="item.name for item in gender", class="inputbox login-input-field signup-gender-field")
+				option(value="") Select Gender
+		div(id="signup_email_container", class="inputbox-container login-input-container signup-email-container")
+			input(id="signup_email_field", ng-model="user.email", class="inputbox login-input-field signup-email-field", type="email", placeholder="Email")
+		div(id="signup_password_container", class="inputbox-container login-input-container signup-password-container")
+			input(id="signup_password_field", ng-model="user.password", class="inputbox login-input-field signup-password-field", type="password", placeholder="Password")
+		div(id="signup_confirmpassword_container", class="inputbox-container login-input-container signup-confirmpassword-container")
+			input(id="signup_confirmpassword_field", ng-model="user.confirmpassword", class="inputbox login-input-field signup-confirmpassword-field", type="password", placeholder="Confirm Password")
+		div(id="signup_submit_container", ng-click="usersignup(user)", class="signup-submit-container")
+			button(id="signup_submit_id", class="btn btn-success") Submit
+	div(id="signin_container",class="signin-container hide")
+		div(id="signin_label", class="signin-label") Sign In
+		div(id="signin_email_container", class="inputbox-container login-input-container signin-email-container")
+			input(id="signin_email_field", ng-model="user.email", class="inputbox login-input-field signin-email-field", type="email", placeholder="Email")
+		div(id="signin_password_container", class="inputbox-container login-input-container signin-password-container")
+			input(id="signin_password_field", ng-model="user.password", class="inputbox login-input-field signin-password-field", type="password", placeholder="Password")
+		div(id="signin_submit_container", ng-click="usersignin(user)", class="signin-submit-container")
+			button(id="signin_submit_id", class="btn btn-success") Submit
+div(id="right_container", class="right-container")
+

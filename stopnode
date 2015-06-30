@@ -1,0 +1,4 @@
+pid=`ps -aef|grep "node ./bin/server.js"|grep -v grep|awk '{print $2}'`
+echo "Ending Node Server - process id: "$pid
+retcode=`kill $pid`
+echo "Node Server Killed, return code: "$retcode

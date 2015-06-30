@@ -1,0 +1,6 @@
+pid=`ps -aef|grep "node ./bin/server.js"|grep -v grep|awk '{print $2}'`
+if [ $pid ];then
+echo "Node Server is UP with pid: "$pid
+else
+echo "Node Server is DOWN"
+fi
