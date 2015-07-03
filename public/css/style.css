@@ -1,5 +1,6 @@
 body {
  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+ margin: 0;
 }
 
 a {
@@ -67,170 +68,6 @@ a {
   color: #FFF;
 }
 /* ################ Components Styles End ################# */
-
-/* ################ Header Styles Start ################# */
-.header-container {
-  width: 100%;
-  height: 50px;
-}
-
-.left-header-container {
-  width: 20%;
-  float: left;
-}
-
-.middle-header-container {
-  width: 60%;
-  float: left;
-}
-
-.right-header-container {
-  width: 20%;
-  float: left;
-}
-
-.company-logo {
-  width: 32px;
-  height: 32px;
-  padding: 9px;
-  float: left;
-}
-
-.menu-container {
-  float: left;
-  padding: 5px;
-  margin: 7px;
-  border: 1px solid #AAA;
-  background-color: #FFF;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.menu-container:hover {
-  background-color: #EEE;
-}
-
-.menu-image {
-  background-image: url("../images/menu_grey.png");
-  width: 24px;
-  height: 24px;
-}
-
-.menu-image:hover {
-  background-image: url("../images/menu_red.png");
-}
-
-.search-box-container {
-  border: 1px solid #AAA;
-  border-radius: 20px;
-  width: 330px;
-  height: 22px;
-  padding: 4px;
-  margin: 10px;
-  float: right;
-}
-
-.search-box-input {
-  border: none;
-  height: 20px;
-  width: 270px;
-  margin-left: 15px;
-  outline: none;
-}
-
-.search-box-image {
-  background-image: url("../images/search.png");
-  width: 24px;
-  height: 24px;
-  float: right;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.signup-button-container, .signin-button-container {
-  margin: 10px;
-  float: left;
-}
-
-/* ################ Header Styles End ################# */
-
-/* ################ Body Styles Start ################# */
-
-.signin-container {
-  border: 1px solid #AAA;
-  border-radius: 5px;
-  width: 400px;
-  height: 230px;
-  margin: auto;
-  margin-top: 40px;
-}
-
-.signup-container {
-  border: 1px solid #AAA;
-  border-radius: 5px;
-  width: 400px;
-  height: 500px;
-  margin: auto;
-  margin-top: 40px;
-}
-
-.signin-container, .signup-container {
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-
-.signin-label, .signup-label {
-  font-size: 25px;
-  padding: 10px;
-  color: #FFF;
-  border-bottom: 1px solid #AAA;
-  background-color: #d9534f;
-}   
-
-.login-input-container {
-  margin: auto;
-  width: 300px;
-  margin-top: 20px;
-}
-
-.login-input-field {
-  width: 300px;
-}
-
-.signup-submit-container, .signin-submit-container {
-  margin: auto;
-  width: 100px;
-  margin-top: 20px;
-}
-
-/* ################ Body Styles End ################# */
-/* ################ General Styles Start ################# */
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-/*.signin-container.hide, .signup-container.hide {
-  -webkit-animation: 0.5s slide-out;
-  -moz-animation: 0.5s slide-out;
-  -o-animation: 0.5s slide-out;
-  animation: 0.5s slide-out;
-  z-index:99;
-}
-
-.signin-container.show, .signup-container.show {
-  -webkit-animation: 0.5s slide-in;
-  -moz-animation: 0.5s slide-in;
-  -o-animation: 0.5s slide-in;
-  animation: 0.5s slide-in;
-  z-index: 100;
-}*/
-
-/* ################ General Styles End ################# */
 /* ################ Animations Styles Start ################# */
 
 @keyframes fade-in {
@@ -286,3 +123,213 @@ a {
 }
 
 /* ################ Animations Styles End ################# */
+
+/* ################ General Styles Start ################# */
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/*.signin-container.hide, .signup-container.hide {
+  -webkit-animation: 0.5s slide-out;
+  -moz-animation: 0.5s slide-out;
+  -o-animation: 0.5s slide-out;
+  animation: 0.5s slide-out;
+  z-index:99;
+}
+
+.signin-container.show, .signup-container.show {
+  -webkit-animation: 0.5s slide-in;
+  -moz-animation: 0.5s slide-in;
+  -o-animation: 0.5s slide-in;
+  animation: 0.5s slide-in;
+  z-index: 100;
+}*/
+
+/* ################ General Styles End ################# */
+
+/* ################ Header Styles Start ################# */
+.header-container {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #AAA;
+  position: fixed;
+}
+
+.left-header-container {
+  width: 20%;
+  float: left;
+}
+
+.middle-header-container {
+  width: 60%;
+  float: left;
+}
+
+.right-header-container {
+  width: 20%;
+  float: left;
+}
+
+.company-logo {
+  width: 32px;
+  height: 32px;
+  padding: 9px;
+  float: left;
+}
+
+.menu-container {
+  float: left;
+  padding: 5px;
+  margin: 7px;
+  background-color: #FFF;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-container:hover {
+  background-color: #EEE;
+  border: 1px solid #AAA;
+}
+
+.menu-image {
+  background-image: url("../images/menu_grey.png");
+  width: 24px;
+  height: 24px;
+}
+
+.menu-image-click {
+  background-image: url("../images/menu_red.png");
+}
+
+.search-box-container {
+  border: 1px solid #AAA;
+  border-radius: 20px;
+  width: 330px;
+  height: 22px;
+  padding: 4px;
+  margin: 10px;
+  float: right;
+}
+
+.search-box-input {
+  border: none;
+  height: 20px;
+  width: 270px;
+  margin-left: 15px;
+  outline: none;
+}
+
+.search-box-image {
+  background-image: url("../images/search.png");
+  width: 24px;
+  height: 24px;
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.signup-button-container, .signin-button-container {
+  margin: 10px;
+  float: left;
+}
+
+/* ################ Header Styles End ################# */
+
+/* ################ Login Styles Start ################# */
+
+.signin-container {
+  border: 1px solid #AAA;
+  border-radius: 5px;
+  width: 400px;
+  height: 230px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.signup-container {
+  border: 1px solid #AAA;
+  border-radius: 5px;
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.signin-container, .signup-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.signin-label, .signup-label {
+  font-size: 25px;
+  padding: 10px;
+  color: #FFF;
+  border-bottom: 1px solid #AAA;
+  background-color: #d9534f;
+}   
+
+.login-input-container {
+  margin: auto;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.login-input-field {
+  width: 300px;
+}
+
+.signup-submit-container, .signin-submit-container {
+  margin: auto;
+  width: 100px;
+  margin-top: 20px;
+}
+
+/* ################ Login Styles End ################# */
+
+/* ################ Body Styles Start ################# */
+.body-container {
+  clear: both;
+  position: relative;
+  top: 50px;
+}
+
+.side-menu-container {
+  width: 230px;
+  border-right: 1px solid #AAA;
+  position:  fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: #FFF;
+  max-height: 100%;
+  margin-top: 50px;
+  height: 300px;
+}
+
+.side-menu-included {
+  padding-left: 230px;
+}
+
+.middle-container {
+  width: 800px;
+  position: relative;
+}
+
+.side-menu-inner {
+  padding: 10px;
+}
+
+ul#menu_group_list {
+  list-style-type: none;
+}
+
+.option1-content, .option2-content {
+  background-color: #A00;
+}
+
+/* ################ Body Styles End ################# */
