@@ -19,6 +19,7 @@ router.get('/partials/:option',function(req,res){
 
 router.get('/option',function(req,res){
     logger.debug("This is the Login module");
-    res.send("This responce came from option"+req.query.optionid)
+    res.set('Content-Type', 'text/html');
+    res.send("<p>This responce came from option"+req.query.optionid+"</p>")
 });
 module.exports = router;

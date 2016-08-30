@@ -69,6 +69,6 @@ var loginServices = angular.module('loginServices', ['ngResource']);
 loginServices.factory('OptionService', ['$resource',
   function($resource){
     return $resource('login/option', {}, {
-      query: {method:'GET', params:{optionid:'1'}, isArray:true}
+      query: {method:'GET', params:{optionid:'1'}, isArray:false,transformResponse: function(response){console.log('hello',response);return response.toString();}}
     });
   }]);

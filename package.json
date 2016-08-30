@@ -1,26 +1,29 @@
 {
-    "name": "Practice-Project"
-  , "version": "0.0.1"
-  , "private": true
-  , "scripts": {
-      "start": "node ./bin/server.js &"
-    }
-  , "dependencies": {
-      "express": "*"
-    , "express-cluster": "*"
-    , "errorhandler": "*"
-    , "method-override": "*"
-    , "morgan": "*"
-    , "serve-favicon": "*"
-    , "jade": "*"
-    , "body-parser": "*"
-    , "multer": "*"
-    , "cookie-parser": "*"
-    , "log4js": "*"
-    , "angular": "*"
-    , "angular-route": "*"
-    , "angular-resource": "*"
-    , "jquery": "*"
-    , "angular-animate": "*"
+  "name": "Practice-Project",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/server.js &"
+  },
+  "dependencies": {
+    "express": "*",
+    "express-cluster": "*",
+    "errorhandler": "*",
+    "method-override": "*",
+    "morgan": "*",
+    "serve-favicon": "*",
+    "jade": "*",
+    "body-parser": "*",
+    "multer": "*",
+    "cookie-parser": "*",
+    "log4js": "*",
+    "angular": "*",
+    "angular-route": "*",
+    "angular-resource": "*",
+    "jquery": "*",
+    "angular-animate": "*",
+    "pg": "^4.4.0",
+    "sequelize": "^3.3.2",
+    "pg-hstore": "^2.3.2"
   }
 }
